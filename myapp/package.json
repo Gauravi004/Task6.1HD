@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@uiw/react-codemirror": "^4.25.2",
     "axios": "^1.12.2",
     "firebase": "^12.4.0",
     "node-fetch": "^3.3.2",
