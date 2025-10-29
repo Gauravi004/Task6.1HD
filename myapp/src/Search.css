@@ -1,0 +1,85 @@
+/* ------- MAIN SEARCH BAR (Clean & Simple) ------- */
+.search {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    margin: 15px auto;
+    gap: 15px;
+    width: 100%;
+    max-width: 1100px;
+
+    background: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------- USERNAME ------- */
+#username {
+    font-weight: 600;
+    color: #222;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+/* ------- SEARCH INPUT (Full Width Now) ------- */
+.search input {
+    flex: 1;               /* ✅ Takes full available space */
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: white;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    width: 90%;
+    transition: all 0.2s ease-in-out;
+}
+
+.search input:focus {
+    border-color: #007bff;
+}
+
+/* ------- BUTTON CONTAINER ------- */
+.button-container {
+    display: flex;
+    gap: 10px;
+    
+    flex: 3;               /* ✅ Makes buttons share space */
+}
+
+/* ------- BUTTON STYLE (Equal Width Now) ------- */
+.btn {
+            /* ✅ All buttons equal width */
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* ------- SIGNOUT BUTTON SPECIAL COLOR ------- */
+.signout {
+    background: #dc3545;
+}
+
+.signout:hover {
+    background: #b02a37;
+}
+
+/* ------- LOGOUT PAGE ------- */
+.logout-page {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.logout-page h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #333;
+}

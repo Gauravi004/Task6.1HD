@@ -1,0 +1,106 @@
+/* Container styling remains same */
+.headline-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(145deg, #ffffff, #f5f8ff);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.headline-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Main heading "New Post" */
+.headline-container h1.headline {
+  font-size: 30px;       /* slightly bigger */
+  font-weight: 700;      /* bold */
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  letter-spacing: 0.5px;
+}
+
+/* Post type selection */
+.post-type-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.post-type-container p.type {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;       /* bigger label for clarity */
+  color: #555;
+}
+
+.post-type-container label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;       /* radio text size */
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.post-type-container input[type="radio"] {
+  accent-color: #0077ff;
+  width: 18px;
+  height: 18px;
+}
+
+/* Bottom row: "What do you want to Share" + Show Filter button */
+.headline-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.headline-action-row h2.headline {
+  font-size: 22px;       /* slightly larger for emphasis */
+  font-weight: 600;
+  color: #444;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+/* Filter button styling */
+.headline-action-row .filter-btn {
+  background: linear-gradient(90deg, #0077ff, #00b0ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.headline-action-row .filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 119, 255, 0.5);
+  background: linear-gradient(90deg, #005fcc, #0098ff);
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .headline-action-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .headline-action-row .filter-btn {
+    align-self: flex-end;
+  }
+}

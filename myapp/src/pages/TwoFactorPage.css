@@ -1,0 +1,24 @@
+.twofactor-page {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #f7f3ff, #ede9fe);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.15);
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.twofactor-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #7c3aed;
+  letter-spacing: 1px;
+}
+
+.twofactor-subtitle {
+  font-size: 1rem;
+  margin-bottom: 28px;
+  color: #4b5563;
+}

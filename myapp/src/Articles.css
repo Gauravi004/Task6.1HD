@@ -1,0 +1,22 @@
+.article-list {
+  display: flex;
+  
+  gap: 16px;
+  object-fit: cover;
+    padding: 20px;
+    
+  
+}
+
+.article-list img{
+    height: 200px;
+    width: 500px;
+    object-fit: cover;
+    display: flex;
+}
+
+.article-list p{
+    font-family: 'Times New Roman', Times, serif;
+    
+    line-height: 1.5;
+}

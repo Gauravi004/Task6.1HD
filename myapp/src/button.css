@@ -1,0 +1,10 @@
+.buttonar{
+    background-color: rgb(215, 199, 199);
+    border: 4px solid transparent;
+    border-radius: 8px;
+    font-family: cursive;
+    cursor: pointer;
+    width: 20%;
+    margin-left: 44%;
+}
+

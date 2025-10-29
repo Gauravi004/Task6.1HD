@@ -1,0 +1,274 @@
+/* Plans.css - Simple, elegant, professional styling */
+
+:root{
+  --bg: #f3f5f7;           /* soft page background */
+  --card: #ffffff;         /* card background */
+  --text: #21303a;         /* primary text (dark slate) */
+  --muted: #6b7a86;        /* muted text */
+  --accent: #2c6f8f;       /* calm teal accent */
+  --accent-2: #4a90e2;     /* soft blue for subtle highlights */
+  --gold: #b8924f;         /* subtle warm accent for ribbon */
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(33,48,58,0.08);
+}
+
+.plans-page {
+  min-height: 100vh;
+  padding: 48px 20px;
+  background: linear-gradient(180deg, var(--bg), #f8fafb 70%);
+  font-family: 'times new roman', sans-serif;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+/* Header */
+.plans-header {
+  max-width: 880px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.plans-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: 0.2px;
+}
+
+.plans-subtitle {
+  color: var(--muted);
+  margin: 0 0 18px;
+  font-size: 15px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Billing toggle */
+.billing-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  background: transparent;
+}
+
+.bill-label {
+  font-size: 14px;
+  color: var(--muted);
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.bill-label.active {
+  color: var(--accent);
+  background: rgba(44,111,143,0.06);
+}
+
+/* Switch */
+.toggle-switch {
+  width: 56px;
+  height: 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(33,48,58,0.06);
+  background: linear-gradient(180deg, #fff, #fbfeff);
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+.toggle-switch:focus { outline: none; box-shadow: 0 0 0 3px rgba(74,144,226,0.12); }
+
+.knob {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(33,48,58,0.08);
+  transform: translateX(0);
+  transition: transform 0.25s cubic-bezier(.2,.9,.3,1);
+}
+
+.knob.yearly { transform: translateX(26px); }
+
+/* Grid */
+.plans-grid {
+  max-width: 960px;
+  margin: 18px auto 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+/* Card base */
+.plan-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(33,48,58,0.04);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(33,48,58,0.10);
+}
+
+/* Ribbon for premium */
+.plan-premium .ribbon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: linear-gradient(90deg, var(--gold), #d6b16a);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 6px 18px rgba(33,48,58,0.08);
+}
+
+/* Top area */
+.plan-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.plan-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.plan-price {
+  text-align: right;
+}
+
+.price-amount {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.price-label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Note */
+.plan-note {
+  margin: 14px 0 10px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Features list */
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.plan-features li {
+  font-size: 14px;
+  color: #263238;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 6px;
+}
+
+/* Tick icon (simple, elegant) */
+.plan-features li .tick {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(74,144,226,0.09);
+  color: var(--accent-2);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+/* Action area */
+.plan-action {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+
+.btn-primary {
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  color: white;
+  box-shadow: 0 8px 20px rgba(74,144,226,0.18);
+}
+
+.btn-primary:hover:not(:disabled) { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(74,144,226,0.2); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid rgba(33,48,58,0.06);
+}
+
+/* Secure note */
+.secure-note {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Legal */
+.plans-legal {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive tweak */
+@media (max-width: 640px) {
+  .plans-header { padding: 0 16px; }
+  .plans-grid { gap: 14px; }
+}

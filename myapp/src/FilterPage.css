@@ -1,0 +1,95 @@
+.find-questions {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading and button side-by-side */
+.find-questions h2 {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+/* Small filter toggle button beside heading */
+.filter-btn {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #005fcc;
+}
+
+.filter-section {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.filter-section input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.question-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.question-card:hover {
+  background-color: #f0f0f0;
+}
+
+.expanded-section {
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.question-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.delete-button {
+  margin-top: 10px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #dc2626;
+}

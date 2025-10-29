@@ -1,0 +1,67 @@
+.twofactor-container {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  max-width: 500px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.twofactor-note {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.twofactor-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.twofactor-button:hover {
+  background-color: #218838;
+}
+
+.twofactor-qrsection {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.twofactor-qrimage {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 12px;
+}
+
+.twofactor-secret {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.twofactor-verifysection {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.twofactor-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 140px;
+  font-size: 15px;
+}
+
+.twofactor-status {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #444;
+}

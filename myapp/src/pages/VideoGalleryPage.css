@@ -1,0 +1,28 @@
+.feature-wrapper {
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #f36dff, #8f57ff);
+  border-radius: 15px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.feature-title {
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.feature-subtitle {
+  font-size: 1.15rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.feature-wrapper:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0px 10px 25px rgba(143, 87, 255, 0.4);
+}

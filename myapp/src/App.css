@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* ========== Variables ========== */
+:root {
+  --font-family-base: Arial, sans-serif;
+  --color-bg-header: #282c34;
+  --color-link: #61dafb;
+  --font-size-base: calc(10px + 2vmin);
+  --transition-speed: 0.3s;
+}
+
+/* ========== Global Styles ========== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+  color: #333;
+  background: #fff;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: #21a1f1;
+}
+
+/* ========== App Container ========== */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: var(--color-bg-header);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+  color: white;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========== Feature Sections ========== */
+.feature-section {
+  margin-top: 24px;
+  padding: 16px;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-section h2 {
+  margin-bottom: 12px;
+  font-size: 1.5em;
+  color: #2a2a2a;
+}
+
+.feature-section p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ========== Utility Classes ========== */
+.container {
+  padding: 20px;
+}
+
+.center-text {
+  text-align: center;
+}

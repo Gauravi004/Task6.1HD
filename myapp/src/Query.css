@@ -1,0 +1,29 @@
+.query{
+    background-color: rgb(204, 185, 185);
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    gap: 16px;
+    
+}
+.query input{
+    border: 1px solid black;
+    border-radius: 5px;
+   width: 30%;
+    margin: 10px;
+}
+.query button{
+    border: 1px solid black;
+    border-radius: 5px;
+   width: 10%;
+    margin: 10px;
+}
+.status-message {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}

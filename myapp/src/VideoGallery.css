@@ -1,0 +1,50 @@
+.videogallery-container {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.videogallery-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.videogallery-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.videogallery-btn:hover {
+  background-color: #0069d9;
+}
+
+.videogallery-list {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.videogallery-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: white;
+}
+
+.videogallery-info {
+  font-size: 14px;
+  color: #444;
+  margin-top: 8px;
+}

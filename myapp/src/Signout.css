@@ -1,0 +1,73 @@
+/* Full page overlay */
+.signout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full viewport height */
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+}
+
+/* Modal box */
+.signout-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px 30px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: 2px solid  black;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Heading */
+.signout-box h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Buttons container */
+.signout-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Yes / No buttons */
+.signout-buttons .btn {
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+/* Yes button */
+.signout-buttons .yes {
+    background-color: #28a745; /* green */
+    color: #fff;
+}
+
+.signout-buttons .yes:hover {
+    background-color: #218838;
+}
+
+/* No button */
+.signout-buttons .no {
+    background-color: #dc3545; /* red */
+    color: #fff;
+}
+
+.signout-buttons .no:hover {
+    background-color: #b02a37;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
